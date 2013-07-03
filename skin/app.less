@@ -1,0 +1,66 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+@packhighlight : #e6e6e6;
+#packlist{
+  position  : absolute;
+  top       : 0;
+  bottom    : 0;
+  left      : 0;
+  right     : 50%;
+  overflow  : auto;
+
+  table{
+    background: #fff;
+    &:hover{
+      background: @packhighlight;
+    }
+  }
+}
+#projectlist{
+  position  : absolute;
+  top       : 0;
+  bottom    : 0;
+  left      : 50%;
+  right     : 0;
+  overflow  : auto;
+}
+#popup{
+  overflow: hidden;
+}
+.popup-wrap{
+  z-index   : 999;
+  position  : absolute;
+  top       : 50%;
+  left      : 50%;
+  .popup{
+    margin-top : -50%;
+    margin-left: -50%;
+    border: 4px solid lightgrey;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    background: #fff;
+  }
+}
+.mask{
+  z-index   : 998;
+  position  : absolute;
+  top       : 0;
+  bottom    : 0;
+  left      : 0;
+  right     : 0;
+  background: rgba(240,240,240,0.2);
+}
+
+#newpack{
+}
+
+#preview{
+  position: absolute;
+  background: @packhighlight;
+  padding: 20px;
+}

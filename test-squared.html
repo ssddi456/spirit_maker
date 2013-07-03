@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test trim</title>
+  <style>
+  *{
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+  </style>
+</head>
+<body>
+  <canvas id="origin"></canvas>
+  <div id="squared">
+    <div>
+      <canvas id="upleft"></canvas>
+      <canvas id="upmid"></canvas>
+      <canvas id="upright"></canvas>
+    </div>
+    <div>
+      <canvas id="midleft"></canvas>
+      <canvas id="mid"></canvas>
+      <canvas id="midright"></canvas>
+    </div>
+    <div>
+      <canvas id="downleft"></canvas>
+      <canvas id="downmid"></canvas>
+      <canvas id="downright"></canvas>
+    </div>
+  </div>
+  <div id="squared-compact">
+    <div>
+      <canvas id="upleft"></canvas>
+      <canvas id="upright"></canvas>
+    </div>
+    <div>
+      <canvas id="downleft"></canvas>
+      <canvas id="downright"></canvas>
+    </div>
+    <div>
+      <canvas id="midleft"></canvas>
+      <canvas id="midright"></canvas>
+    </div>
+    <div>
+      <canvas id="upmid"></canvas>
+    </div>
+    <div>
+      <canvas id="downmid"></canvas>
+    </div>
+      <canvas id="mid"></canvas>
+  </div>
+  <div id="scarlabel-horizon">
+    <div>
+      <canvas id="left"></canvas><canvas id="mid"></canvas><canvas id="right"></canvas>
+    </div>
+  </div>
+  <div id="scarlabel-vertical">
+    <div>
+      <canvas id="up"></canvas>
+    </div>
+    <div>
+      <canvas id="mid"></canvas>
+    </div>
+    <div>
+      <canvas id="down"></canvas>
+    </div>
+  </div>
+
+  <script>
+  window.require = undefined;
+  </script>
+  <script src="libs/jquery-1.7.1.js"></script>
+  <script src="libs/require.js" data-main="test/test-squared.js"></script>
+</body>
+</html>

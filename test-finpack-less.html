@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <img source />
+  <img id="output">
+  <script> 
+    require('nw.gui').Window.get().showDevTools()
+    window.require = undefined;
+  </script>
+  <script src="libs/jquery-1.7.1.js"></script>
+  <script src="libs/require.js" data-main="test/test-finpack-less.js"></script>
+</body>
+</html>

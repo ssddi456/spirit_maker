@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand">merge files</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li>some</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="container">
+      <div class="left"> <canvas id="main-canvas"></canvas></div>
+      <div class="right" id='piclist'>
+        <div>
+          <div>
+            <div><span class="spirit-name" data-bind="text:name"></span><input class="spirit-name" type="text" data-bind="value:name"/></div>
+          </div>
+          <div>
+            <div class="th">sourceDir   </div>
+            <div class="tb" data-bind="text:sourceDir   ,
+                           click:changeSourceDir   "></div>
+          </div>
+          <div>
+            <div class="th">outputSpirit</div>
+            <div class="tb" data-bind="text:outputSpirit,
+                           click:changeOutputSpirit"></div>
+          </div>
+          <div>
+            <div class="th">outputLess  </div>
+            <div class="tb" data-bind="text:outputLess  ,
+                           click:changeOutputLess  "></div>
+          </div>
+        </div>
+        <div data-bind="foreach:piclist" class="piclist"> 
+          <table class="picitem table table-striped table-hover">
+            <thead>
+              <tr>
+                <td colspan="3">
+                  <div class="picname" 
+                       data-bind="text:name,
+                                  title:name" 
+                  ></div></td>
+                <td><i class="remove icon-remove"></i></td></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>x</td>
+                <td data-bind="text:x"></td>
+                <td>y</td>
+                <td data-bind="text:y"></td></tr>
+              <tr>
+                <td>height</td>
+                <td data-bind="text:height"></td>
+                <td>width</td>
+                <td data-bind="text:width"></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-panel">
+    <div class="arrow-wrapper">
+      <div class="arrow"></div>
+    </div>
+    <div>
+      <div class="icon-plus" id="addSpirit"></div>
+    </div>
+    <div id="new-spirit">
+      <div>
+        <div class="th">name   </div>
+        <div class="tb"><input data-bind="value:name"></div>
+      </div>
+      <div data-bind="click:changeSourceDir">
+        <div class="th">sourceDir   </div>
+        <div class="tb" 
+             data-bind="text:sourceDir"></div>
+      </div>
+      <div data-bind="click:changeOutputSpirit">
+        <div class="th">outputSpirit</div>
+        <div class="tb" 
+             data-bind="text:outputSpirit"></div>
+      </div>
+      <div data-bind="click:changeOutputLess">
+        <div class="th">outputLess  </div>
+        <div class="tb" 
+             data-bind="text:outputLess"></div>
+      </div>
+      <div>
+        <div><button data-bind="click  : cancel">cancel</button>
+             <button data-bind="visible: validate(),
+                                click  : newSpirit">confirm</button></div>
+      </div>
+    </div>
+    <div id="spirit-list">
+      <input type="text" value="" list="spirits-autocomplete" class="span2">
+      <datalist id="spirits-autocomplete" data-bind="foreach:spirits">
+        <option data-bind="value:name"></option> 
+      </datalist>
+      <!-- ko foreach:spirits -->
+      <div class="spirit-item" >
+        <span data-bind="text :name,
+                         click:$root.showSpirit"></span>
+        <i class="remove icon-remove"></i>
+      </div>
+      <!-- /ko -->
+    </div>
+  </div>
+  <script>
+    var gui = global.gui = window.gui = require('nw.gui');
+    window.require = undefined;
+    gui.Window.get().showDevTools()
+    var new_win = gui.Window.get(
+      window.open('test-finpack.html')
+    ).showDevTools();
+  </script>
+  <script src="libs/jquery-1.7.1.js"></script>
+  <script src="libs/require.js" data-main="app.js"></script>
+</body>
+</html>

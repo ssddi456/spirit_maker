@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test trim</title>
+  <style>
+/*  *{
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+  }
+*/  </style>
+</head>
+<body>
+  <div id="origin">
+    <h1> source </h1>
+    <canvas id="origin"       ></canvas>
+    <canvas id="squared"      ></canvas><br>
+    <canvas id="scar-horizon" ></canvas>
+    <canvas id="scar-vertical"></canvas>
+  </div>
+  <div id="processing">
+    <h1>processing</h1>
+    <canvas id="origin"       ></canvas>
+    <canvas id="squared"      ></canvas><br>
+    <canvas id="scar-horizon" ></canvas>
+    <canvas id="scar-vertical"></canvas>
+  </div>
+  <div>
+    <h1>final</h1>
+    <canvas id="fin"></canvas>
+  </div>
+
+
+  <script>
+  require('nw.gui').Window.get().showDevTools();
+  window.require = undefined;
+
+
+  </script>
+  <script src="libs/jquery-1.7.1.js"></script>
+  <script src="libs/require.js" data-main="test/test-finpack.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "spirits": [
+    {
+      "name": "output",
+      "sourceDir": "D:\\backup\\nwtest\\mergeFile\\source",
+      "outputSpirit": "D:\\backup\\nwtest\\mergeFile\\output\\output.png",
+      "outputLess": "D:\\backup\\nwtest\\mergeFile\\output\\output.less"
+    },
+    {
+      "name": "out",
+      "sourceDir": "C:\\Users\\lihaibo01\\Desktop\\test",
+      "outputSpirit": "D:\\test-out\\out.png",
+      "outputLess": "D:\\test-out\\out.less"
+    },
+    {
+      "name": "out",
+      "sourceDir": "C:\\Users\\lihaibo01\\Desktop\\test",
+      "outputSpirit": "D:\\test-out\\out.png",
+      "outputLess": "D:\\test-out\\out.less"
+    }
+  ]
+}

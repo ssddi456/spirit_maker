@@ -1,0 +1,19 @@
+{
+  "main": "app-v2.html",
+  "name": "spirit_maker",
+  "description": "demo app of node-webkit",
+  "version": "0.1.0",
+  "window": {
+    "toolbar": false,
+    "position": "mouse",
+    "position": "center",
+    "width": 970,
+    "height": 300,
+    "min_width": 940,
+    "min_height": 220
+  },
+  "dependencies":{
+    "fs-extra": "0.6.0",
+    "async"   : "0.2.9"
+  }
+}

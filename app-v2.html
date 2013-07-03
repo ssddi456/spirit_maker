@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v2 packers</title>
+  <link rel="stylesheet/less" type="text/css" href="skin/app.less">
+</head>
+<body>
+  
+  <div id="packlist" data-bind="foreach: packs">
+    <table>
+      <tr>
+        <td> name       </td>
+        <td>
+          <span data-bind="text : name"></span>
+          <button data-bind="click:$root.remove.bind($root)">remove</button>
+        </td>
+      </tr>
+      <tr>
+        <td> type       </td><td data-bind="text : type"></td>
+      </tr>
+    </table>
+  </div>
+  <div id="projectlist" >
+    <div>
+      <button data-bind="click : newproject">new project</button>
+      <button style="z-index:10000;" onclick="window.gui.Window.get().showDevTools();"> show dev tool </button>
+    </div>
+    <div data-bind="foreach: projects">
+      <table data-bind="click : $root.curproject.bind($root.curproject,$data)">
+        <tr> 
+          <td> name         </td>
+          <td>
+            <span data-bind="text:name"></span>
+            <button data-bind="click:$root.remove.bind($root)">remove</button>
+          </td>
+        </tr>
+        <tr> 
+          <td> sourcefolder </td><td data-bind="text  : sourceDir,
+                                                click : changeSourceDir"></td> 
+        </tr>
+        <tr> 
+          <td> target spirit</td><td data-bind="text  : outputSpirit,
+                                                click : changeOutputSpirit"></td>   
+        </tr>
+        <tr> 
+          <td> target less  </td><td data-bind="text  : outputLess,
+                                                click : changeOutputLess"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="popup">
+    <!-- ko if : newpack -->
+    <div class="popup-wrap" >
+
+      <div class="popup" id="newpack" data-bind="with : newpack ">
+        <h2> new pack </h2>
+        <table>
+          <tr><td colspan="2" data-bind="text : name"></td></tr>
+          <tr><td>custom class</td><td><input data-bind="value : classname"></td></tr>
+          <tr>
+            <td>type</td>
+            <td>
+              <select data-bind="value:type">
+                <option value="single">single</option>
+                <option value="box">box</option>
+                <option value="horizon">horizon</option>
+                <option value="vertical">vertical</option>
+              </select>
+            </td>
+          </tr>
+          <!-- ko if : type() != 'single' -->
+            <!-- ko if : type() != 'horizon' -->
+            <tr>
+              <td>min height</td>
+              <td><input data-bind="value : minheight" /></td>
+            </tr>
+            <!-- /ko -->
+            <!-- ko if : type() != 'vertical' -->
+            <tr>
+              <td>min width</td>
+              <td><input data-bind="value : minwidth"  /></td>
+            </tr>
+            <!-- /ko -->
+            <tr>
+              <td>borders</td>
+              <td><input data-bind="value : border"  /><span data-bind="text : validateborder( border() )"></span></td>
+            </tr>
+          <!-- /ko -->
+            <tr>
+              <td><button data-bind="enable: enable() == true,
+                                     click : save">save</button></td>
+              <td><button data-bind="click: reset">reset</button></td>
+            </tr>
+            <tr>
+              <td><button data-bind="click: cancel">cancel</button></td>
+              <td></td>
+            </tr>
+        </table>
+      </div>
+    </div>
+    <div class="mask"></div>
+    <!-- /ko -->
+    <!-- ko if : newproject -->
+    <div class="popup-wrap" >
+
+      <div class="popup" id="newproject" data-bind="with : newproject ">
+        <h2> new project </h2>
+        <table>
+          <tr>
+            <td>name</td>
+            <td><input type="text" 
+                       placeholder="input project name"
+                       data-bind="value : name"></td>
+          </tr>
+          <tr> 
+            <td> sourcefolder </td>
+            <td><input type="text"
+                       placeholder="choose source folder"
+                       data-bind="value : sourceDir,
+                                  click : changeSourceDir"></td> 
+          </tr>
+          <tr> 
+            <td> target spirit</td>
+            <td><input type="text"
+                       placeholder="choose target spirit image"
+                       data-bind="value : outputSpirit,
+                                  click : changeOutputSpirit"></td>   
+          </tr>
+          <tr> 
+            <td> target less  </td>
+            <td><input type="text" 
+                       placeholder="choose target less file"
+                       data-bind="value : outputLess,
+                                  click : changeOutputLess"></td>   
+          </tr>
+          <tr>
+            <td><button data-bind="enable: enable() == true,
+                                   click : save">save</button></td>
+            <td><button data-bind="click : reset">reset</button></td>
+          </tr>
+          <tr>
+            <td><button data-bind="click: cancel">cancel</button></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="mask"></div>
+    <!-- /ko -->
+  </div>
+
+  <div id="preview" data-bind="visible : curpack">
+    <canvas source='source' ></canvas>
+    <!-- ko if : curpack-->
+      <table data-bind="with : curpack">
+        <tbody>
+          <tr>
+            <td>class name</td>
+            <td><input type="text" data-bind="value : classname"></td>
+          </tr>
+          <!-- ko if :  $data.type() != 'single' -->
+          <tr data-bind="if : $data.type() != 'horizon'">
+            <td> min height </td><td><input data-bind="value : minheight" /></td>
+          </tr>
+          <tr data-bind="if : $data.type() != 'vertical'">
+            <td> min width  </td><td><input data-bind="value : minwidth"></td>
+          </tr>
+          <tr>
+            <td> border     </td><td><input data-bind="value : border"></td>
+          </tr>
+          <!-- /ko -->
+          <tr>
+            <td><button data-bind="click:$root.copycss">copy css</button></td>
+            <td><button data-bind="click:$root.copyless">copy less mixins</button></td>
+          </tr>
+          <!-- ko if:$root.cancopylessstr() == true -->
+          <tr>
+            <td><button data-bind="click  : $root.copylessstr">copy less strut</button</td>
+            <td></td>
+          </tr>
+          <!-- /ko -->
+        </tbody>
+      </table>
+    <!-- /ko -->
+  </div>
+
+  <script>
+    window.gui = require('nw.gui');
+    window.require = undefined;
+  </script>
+  <script src="libs/less-1.4.0-beta.min.js"></script>
+  <script src="libs/jquery-1.7.1.js"></script>
+  <script src="libs/require.js" data-main="app-v2.js"></script>
+</body>
+</html>
