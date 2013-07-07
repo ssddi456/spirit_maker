@@ -1,7 +1,6 @@
 require.config({
   baseUrl: './',
   paths :{
-    ko : 'libs/knockout-2.2.0',
     less:'libs/less-1.4.0-beta.min',
     underscore :'libs/underscore-min'
   }
@@ -15,7 +14,6 @@ require([
   './src/packlist',
   './src/dropimg',
   './src/newpack',
-  'ko'
   
 ],function(
   pixel,
@@ -25,8 +23,6 @@ require([
   packlist,
   dropimg,
   newpack,
-  ko
-  
 ){
 
   var async = global.require('async');
@@ -194,6 +190,7 @@ require([
   ko.applyBindings( previewCMN,  gid('preview')     );
 
 
+  avalon.scan();
 
   if( projectlist.projects().length == 0 ){
     newproject.show();

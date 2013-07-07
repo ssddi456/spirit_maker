@@ -20,58 +20,60 @@ define([
     }
   }
 
+  function ProjectListFunc ( ProjectList ){
 
-  var ProjectList ={
-    projects    : ko.observableArray(),
-    curproject  : ko.observable(),
-    
-    addProject  : function( project ) {
-      var self = this;
-      if( _.isArray(project) ){
-        _.each(project,function( project ) {
-          self.addProject(project);
-        });
-        return this;
+    $.extend ( ProjectList,{
+        projects    : [],
+        curproject  : false,
+        
+        addProject  : function( project ) {
+          var self = this;
+          if( _.isArray(project) ){
+            _.each(project,function( project ) {
+              self.addProject(project);
+            });
+            return this;
+          }
+          this.projects.push( new Project(project) );
+          this.save();
+          return this
+        },
+  
+        toJSON      : function( ) {
+          
+          return _.map( this.projects(),function( project ) {
+            var ret = project.toJSON();
+            ret.packs = undefined;
+            return ret;
+          });
+        },
+        
+        remove      : function( project ) {
+          this.projects.remove( project );
+          var projects = this.curproject();
+          if( this.curproject() == project ){
+            if(  projects.length ){
+              this.curproject = projects[0] );
+            } else {
+              this.curproject( false );
+            }
+          } 
+          this.save();
+        },
+        load        : function() {
+          try{
+            this.addProject( fsExtra.readJSONSync( projects_file  ));
+            console.log( JSON.stringify(this) );
+          } catch(e){
+            console.log( 'projects load fail', e);
+          }
+        },
+        save        : _.debounce(function() {
+                        fsExtra.writeJSON ( projects_file, ProjectList.toJSON() );
+                      },300)
       }
-      this.projects.push( new Project(project) );
-      this.save();
-      return this
-    },
-
-    toJSON      : function( ) {
-      
-      return _.map( this.projects(),function( project ) {
-        var ret = project.toJSON();
-        ret.packs = undefined;
-        return ret;
-      });
-    },
-    
-    remove      : function( project ) {
-      this.projects.remove( project );
-      var projects = this.curproject();
-      if( this.curproject() == project ){
-        if(  projects.length ){
-          this.curproject( projects[0] );
-        } else {
-          this.curproject( false );
-        }
-      } 
-      this.save();
-    },
-    load        : function() {
-      try{
-        this.addProject( fsExtra.readJSONSync( projects_file  ));
-        console.log( JSON.stringify(this) );
-      } catch(e){
-        console.log( 'projects load fail', e);
-      }
-    },
-    save        : _.debounce(function() {
-                    fsExtra.writeJSON ( projects_file, ProjectList.toJSON() );
-                  },300)
-  }
-
-  ProjectList.load();
+  
+      ProjectList.load();
+    })
   return ProjectList; 
 });

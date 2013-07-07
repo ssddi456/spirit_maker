@@ -1,10 +1,8 @@
 define([
   './projectlist',
-  'ko',
   'underscore',
 ],function(
   projectlist,
-  ko,
   __
 ){
   var fs = global.require('fs');

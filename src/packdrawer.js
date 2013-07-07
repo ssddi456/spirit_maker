@@ -4,7 +4,6 @@ define([
   './projectlist',
   './helpers/simplepack',
   './packers',
-  'ko',
   'underscore'
 ],function(
   loadimage,
@@ -12,7 +11,6 @@ define([
   projectlist,
   simplepack,
   packers,
-  ko,
   __
 ){
 
