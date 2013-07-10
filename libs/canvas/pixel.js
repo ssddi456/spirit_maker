@@ -56,7 +56,10 @@ define([
         canvas.height = img.height;
         canvas.getContext('2d').drawImage( img, 0, 0 );
       }
+
       this.source = w.source || w;
+      canvas.source = w.source||w;
+      canvas.name   = this.name;
     } else {
       var canvas = document.createElement('canvas');
       canvas.width  = w || 400;
@@ -66,7 +69,7 @@ define([
     this.width  = canvas.width;
     this.height = canvas.height;
     this.canvas = canvas;
-    this.ctx    = ctx;      
+    this.ctx    = ctx;
   }
   var cfn = Canvas.prototype;
   cfn.subCanvas = function(top, left, width, height) {

@@ -5,7 +5,7 @@ define([
   ko,
   __
 ){
-  var keys = ['type','name','minwidth','minheight','border','classname' ];
+  var keys = ['type','name','minwidth','minheight','border','classname','trim'];
   function Pack ( props ) {
     var self = this;
     props = props || {};

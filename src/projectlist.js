@@ -33,7 +33,9 @@ define([
         });
         return this;
       }
-      this.projects.push( new Project(project) );
+      var newproject = new Project(project);
+      this.projects.push( newproject );
+      newproject.on ( 'change', self.save );
       this.save();
       return this
     },
@@ -49,6 +51,9 @@ define([
     
     remove      : function( project ) {
       this.projects.remove( project );
+
+      project.removeAllListeners();
+
       var projects = this.curproject();
       if( this.curproject() == project ){
         if(  projects.length ){
@@ -71,6 +76,7 @@ define([
                     fsExtra.writeJSON ( projects_file, ProjectList.toJSON() );
                   },300)
   }
+
 
   ProjectList.load();
   return ProjectList; 

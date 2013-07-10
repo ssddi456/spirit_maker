@@ -14,9 +14,20 @@ define([
     ret.pack([ img ]);
     return ret;
   }
+
+  function getCanvas ( img, optn ){
+    if( optn.trim ){
+      var _canvas = new pixel.PixelCanvas( img ).trim().canvas;
+    } else {
+      var _canvas = new pixel.Canvas( img ).canvas;
+
+    }
+    return _canvas;
+  }
+
   function simsquaredpack ( img, borders, optn ) {
 
-    var spliter = new squared.Squared( new pixel.PixelCanvas( img ).trim().canvas );
+    var spliter = new squared.Squared( getCanvas( img, optn ) );
 
     optn = optn || {};
 
@@ -52,7 +63,7 @@ define([
 
   function simscarhorpack( img, borders, optn ){
 
-    var spliter = new squared.ScalableHorizon( new pixel.PixelCanvas(img).trim().canvas  );
+    var spliter = new squared.ScalableHorizon( getCanvas( img, optn )  );
 
     optn = optn || {};
 
@@ -77,7 +88,7 @@ define([
   }
 
   function simscarverpack( img, borders, optn ){
-    var spliter = new squared.ScalableVertical( new pixel.PixelCanvas( img ).trim().canvas );
+    var spliter = new squared.ScalableVertical( getCanvas( img, optn ) );
 
     optn = optn || {};
     

@@ -19,7 +19,7 @@ define([
     this.sourceDir    = ko.observable( optn.sourceDir    || '' );
     this.outputSpirit = ko.observable( optn.outputSpirit || '' );
     this.outputLess   = ko.observable( optn.outputLess   || '' );
-    this.packs        = ko.observable( optn.packs        || []  );
+    this.packs        = ko.observable( optn.packs        || [] );
     emitter.call(this);
 
     keys.forEach(function(name){

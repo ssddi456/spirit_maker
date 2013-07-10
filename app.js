@@ -207,7 +207,7 @@ require([
         var spiritname = path.basename( piclist.outputSpirit());
         var lessdir    = path.dirname( piclist.outputLess    );
         var spiritdir  = path.dirname( piclist.outputSpirit());
-        var refdir     = path.resolve( spiritdir, lessdir );
+        var refdir     = path.relative( spiritdir, lessdir );
         fs.writeFile(
           piclist.outputLess(),
           imgs.map(function(img, idx){

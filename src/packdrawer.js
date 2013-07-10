@@ -26,18 +26,18 @@ define([
   // packed-url x  y
   var spirittpl = {};
   spirittpl.bins = util.format.bind(util,'  background : url( @spirit_%s ) #fff -%spx -%spx no-repeat;\n  width: %spx;\n  height: %spx;\n');
-  spirittpl.hori = util.format.bind(util,'  background : url( @spirit_%s ) #fff -%spx -%spx repeat-x;\n  dim:%s;\n  height: %spx;\n');
-  spirittpl.vert = util.format.bind(util,'  background : url( @spirit_%s ) #fff -%spx -%spx repeat-y;\n  width : %spx;\n  dim:%s;\n');
+  spirittpl.hori = util.format.bind(util,'  background : url( @spirit_%s ) #fff -%spx -%spx repeat-x;\n  width:%spx;\n  dim: %s;\n');
+  spirittpl.vert = util.format.bind(util,'  background : url( @spirit_%s ) #fff -%spx -%spx repeat-y;\n  dim : %s;\n  height:%spx;\n');
 
   var csstpl  = {
     bins : util.format.bind(util,'  background : url( "%s" ) #fff -%spx -%spx no-repeat;\n  width: %spx;\n  height: %spx;\n'),
-    hori : util.format.bind(util,'  background : url( "%s" ) #fff -%spx -%spx repeat-x;\n  dim:%s;\n  height: %spx;\n'),
-    vert : util.format.bind(util,'  background : url( "%s" ) #fff -%spx -%spx repeat-y;\n  width : %spx;\n  dim:%s;\n')
+    hori : util.format.bind(util,'  background : url( "%s" ) #fff -%spx -%spx repeat-x;\n  width:%spx;\n  dim: %s;\n'),
+    vert : util.format.bind(util,'  background : url( "%s" ) #fff -%spx -%spx repeat-y;\n  dim : %s;\n  height:%spx;\n')
   };
 
   // classname, projectname, sourcename
   var classTpl = {
-    simple   : [
+    single   : [
                 '.<%= classname %>{',
                 '  .<%= projectname %>_bins_bin("<%= sourcename %>");',
                 ' }'
@@ -134,7 +134,8 @@ define([
         pack.cssstr    = [];
         pack.lessnames = [];
       });
-      var refpath  = path.resolve(curproject.outputLess, curproject.outputSpirit);
+      var refpath  = path.relative( path.dirname(curproject.outputLess), curproject.outputSpirit);
+      refpath = refpath.replace(/\\/g,'/');
       var lessstr    = [spirit_out_tpl( curproject.name, refpath ) ]
                           .concat( 
                             idxs.map(function( name, idx){
