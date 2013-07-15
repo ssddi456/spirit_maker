@@ -221,3 +221,10 @@ pip-log.txt
 #############
 
 node_modules/
+
+
+####
+# sublime
+####
+
+*.sublime*
