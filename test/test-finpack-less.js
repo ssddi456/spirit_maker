@@ -1,17 +1,17 @@
 require.config({
   baseUrl: './',
   paths :{
-    ko : 'libs/knockout-2.2.0',
-    less:'libs/less-1.4.0-beta.min',
-    underscore :'libs/underscore-min'
+    ko : '../libs/knockout-2.2.0',
+    less:'../libs/less-1.4.0-beta.min',
+    underscore :'../libs/underscore-min'
   }
 });
 require([
   'src/packers',
   'src/helpers/loadimage',
   'src/helpers/simplepack',
-  'libs/canvas/squared',
-  'libs/canvas/pixel',
+  '../libs/canvas/squared',
+  '../libs/canvas/pixel',
   'ko',
   'underscore'
 ],function(

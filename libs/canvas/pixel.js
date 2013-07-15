@@ -14,13 +14,25 @@ define([
     this.a = a;
   }
   var pxfn = Pixel.prototype;
+
   pxfn.equal = function( pixel ){
     return pixel.r == this.r &&
            pixel.g == this.g &&
            pixel.b == this.b &&
            pixel.a == this.a;
+  };
+  pxfn.toHex = function() {
+    return this.r.toString('16').replace(/^(\w)$/,"0$1") + 
+           this.g.toString('16').replace(/^(\w)$/,"0$1") +
+           this.b.toString('16').replace(/^(\w)$/,"0$1") ;
   }
 
+  pxfn.fromHex = function( hex ) {
+    return new Pixel( 
+      parseInt(hex.slice(0,2), 16), 
+      parseInt(hex.slice(2,4), 16), 
+      parseInt(hex.slice(4,6), 16), 155 );
+  }
   function EditablePixel ( r, g, b, a){
     this.origin = new Pixel(r,g,b,a);
     this.r = r;
@@ -31,14 +43,19 @@ define([
   var efn = EditablePixel.prototype;
   efn.isChanged = function(){
     return  !this.origin.equal(this);
-  }
+  };
+
   efn.equal = pxfn.equal;
+  
   efn.save = function(){
     this.origin.r = this.r;
     this.origin.g = this.g;
     this.origin.b = this.b;
     this.origin.a = this.a;
-  }
+  };
+  
+  efn.toHex = pxfn.toHex;
+  
   function Canvas( w, h) {
     if( w.nodeName){
       if( w.nodeName == "CANVAS" ){

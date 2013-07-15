@@ -1,0 +1,1445 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pix",
+				"PixelCanvas"
+			],
+			[
+				"to",
+				"totrim"
+			],
+			[
+				"_",
+				"_pos"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"co",
+				"color_picker"
+			],
+			[
+				"de",
+				"debounce_loop"
+			],
+			[
+				"h",
+				"hex"
+			],
+			[
+				"deb",
+				"debouncelog"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"ca",
+				"charset"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"fl",
+				"fl-r	float: right;"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"tio",
+				"tipBody"
+			],
+			[
+				"ti",
+				"tips"
+			],
+			[
+				"bg",
+				"bg	background: #${1:000};"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"f-",
+				"fl-r	float: right;"
+			],
+			[
+				"fw-b",
+				"fw-br	font-weight: bolder;"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"d-ib",
+				"d-ib+	display: inline-block;\n*display: inline;\n*zoom: 1;"
+			],
+			[
+				"d",
+				"d-ib	display: inline-block;"
+			],
+			[
+				"di",
+				"d-ib+	display: inline-block;\n*display: inline;\n*zoom: 1;"
+			],
+			[
+				"op",
+				"op+	opacity: $1;\nfilter: alpha(opacity=$2);"
+			],
+			[
+				"ru",
+				"rules"
+			],
+			[
+				"fo",
+				"fold"
+			],
+			[
+				"r",
+				"rules"
+			],
+			[
+				"e",
+				"elem"
+			],
+			[
+				"el",
+				"elems"
+			],
+			[
+				"pro",
+				"proper"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"fw",
+				"fw-br	font-weight: bolder;"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"pd",
+				"padding-bottom"
+			],
+			[
+				"lh",
+				"line-height"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"write_r",
+				"write_require"
+			],
+			[
+				"wri",
+				"write_path"
+			],
+			[
+				"wr",
+				"write_require"
+			],
+			[
+				"mo",
+				"module_rel_path"
+			],
+			[
+				"sl",
+				"sel"
+			],
+			[
+				"re",
+				"resolvers"
+			],
+			[
+				"se",
+				"self"
+			],
+			[
+				"n",
+				"NewCard"
+			],
+			[
+				"bin",
+				"BindedCard"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"va",
+				"validate"
+			],
+			[
+				"ch",
+				"checkFix"
+			],
+			[
+				"get",
+				"getData"
+			],
+			[
+				"li",
+				"loginPop"
+			],
+			[
+				"lg",
+				"login"
+			],
+			[
+				"lo",
+				"loginPop"
+			],
+			[
+				"s",
+				"securityController"
+			],
+			[
+				"ge",
+				"getLength"
+			],
+			[
+				"a",
+				"passApi"
+			],
+			[
+				"fi",
+				"file"
+			],
+			[
+				"pr",
+				"project"
+			],
+			[
+				"img",
+				"imgs"
+			],
+			[
+				"p",
+				"pixel"
+			],
+			[
+				"pac",
+				"pack"
+			],
+			[
+				"l",
+				"load"
+			],
+			[
+				"P",
+				"ProjectList"
+			],
+			[
+				"fs",
+				"fsExtra"
+			],
+			[
+				"dr",
+				"drawer"
+			],
+			[
+				"ou",
+				"outputSpirit"
+			],
+			[
+				"sp",
+				"spirittpl"
+			],
+			[
+				"nam",
+				"name"
+			],
+			[
+				"na",
+				"namestpl"
+			],
+			[
+				"pack",
+				"packers"
+			],
+			[
+				"sim",
+				"simplepack"
+			],
+			[
+				"ss",
+				"simsquaredpack"
+			],
+			[
+				"ne",
+				"newpack"
+			],
+			[
+				"new",
+				"newproject"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"f",
+				"files"
+			],
+			[
+				"cha",
+				"changeHandle"
+			],
+			[
+				"ky",
+				"key"
+			],
+			[
+				"ke",
+				"keys"
+			],
+			[
+				"su",
+				"subscribers"
+			],
+			[
+				"ob",
+				"obj"
+			],
+			[
+				"val",
+				"validateborder"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"v",
+				"validateborder"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"k",
+				"koHelper"
+			],
+			[
+				"ko",
+				"koDefine"
+			],
+			[
+				"sr",
+				"src"
+			],
+			[
+				"ver",
+				"verticalpack"
+			],
+			[
+				"cs",
+				"canvas"
+			],
+			[
+				"u",
+				"used"
+			],
+			[
+				"id",
+				"indexs"
+			],
+			[
+				"im",
+				"imgdata"
+			],
+			[
+				"cn",
+				"canvas"
+			],
+			[
+				"sub",
+				"subFolders"
+			],
+			[
+				"re_",
+				"re_empty"
+			],
+			[
+				"path",
+				"path_point"
+			],
+			[
+				"is",
+				"is_node_webkit"
+			],
+			[
+				"node",
+				"nodejs"
+			],
+			[
+				"j",
+				"json"
+			],
+			[
+				"mod",
+				"module_point"
+			],
+			[
+				"module_",
+				"module_point"
+			],
+			[
+				"mon",
+				"module_point"
+			],
+			[
+				"we",
+				"write_requirejs"
+			],
+			[
+				"no",
+				"nodejs"
+			],
+			[
+				"m",
+				"module"
+			],
+			[
+				"__",
+				"__file__"
+			],
+			[
+				"node_",
+				"node_tpl"
+			],
+			[
+				"pap",
+				"paper"
+			],
+			[
+				"papr",
+				"papers"
+			],
+			[
+				"nod",
+				"nodeName"
+			],
+			[
+				"un",
+				"unused"
+			],
+			[
+				"si",
+				"simfinpack"
+			],
+			[
+				"V",
+				"VerticalPack"
+			],
+			[
+				"dra",
+				"drawTo"
+			],
+			[
+				"uo",
+				"updateLayout"
+			],
+			[
+				"finp",
+				"finpack"
+			],
+			[
+				"Sc",
+				"ScalableVertical"
+			],
+			[
+				"S",
+				"ScalableHorizon"
+			],
+			[
+				"fin",
+				"finpack"
+			],
+			[
+				"i",
+				"item"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test_page/test_ruler.html",
+			"settings":
+			{
+				"buffer_size": 407,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/test-ruler.js",
+			"settings":
+			{
+				"buffer_size": 4110,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "libs/canvas/pixel.js",
+			"settings":
+			{
+				"buffer_size": 9234,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 196.0,
+		"selected_items":
+		[
+			[
+				"cmd",
+				"open cur file path cmd"
+			],
+			[
+				"cm",
+				"open cur file path cmd"
+			],
+			[
+				"hex",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"pre",
+				"Preferences: Settings - Default"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"hin",
+				"JSHint"
+			],
+			[
+				"hint",
+				"JSHint"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"jh",
+				"JSHint"
+			],
+			[
+				"h",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"colr",
+				"Color picker"
+			],
+			[
+				"col",
+				"Color picker"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"fo",
+				"Format: Javascript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"CMD",
+				"open cur file path cmd"
+			],
+			[
+				"cnd",
+				"Package Control: Disable Package"
+			],
+			[
+				"v8",
+				"V8: Show Console"
+			],
+			[
+				"defa",
+				"Preferences: Settings - Default"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"fi",
+				"File: New View into File"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"fomar",
+				"Format: Javascript"
+			],
+			[
+				"fomat",
+				"Format: Javascript"
+			],
+			[
+				"wrap",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"lint",
+				"JSLint: Run JSLint"
+			],
+			[
+				"line",
+				"Sort Lines (Case Sensitive)"
+			],
+			[
+				"aline",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"alig",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pacakge",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"packap",
+				"Package Control: Disable Package"
+			],
+			[
+				"test",
+				"create script test Page "
+			],
+			[
+				"crea",
+				"create script test Page "
+			],
+			[
+				"open",
+				"open cur file path cmd"
+			],
+			[
+				"oe",
+				"open cmd in curfile path"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"console",
+				"V8: Show Console"
+			],
+			[
+				"wra",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"wr",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"zen",
+				"Set Syntax: ZenCoding"
+			],
+			[
+				"wrapo",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"zend",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"build",
+				"Build: Cancel"
+			],
+			[
+				"remoce",
+				"Package Control: Remove Package"
+			],
+			[
+				"package ",
+				"Package Control: Remove Package"
+			],
+			[
+				"ipackage",
+				"Package Control: Disable Package"
+			],
+			[
+				"unin",
+				"Snippet: unbind"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"align",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"jslin",
+				"JSLint: Run JSLint"
+			],
+			[
+				"zenc",
+				"Zen Coding: Wrap zen as you type"
+			],
+			[
+				"cre",
+				"create script test Page "
+			],
+			[
+				"create",
+				"create script test Page "
+			],
+			[
+				"creat",
+				"create script test Page "
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"v",
+				"V8: Run JSHint"
+			],
+			[
+				"snipp",
+				"Snippet: Prototype"
+			],
+			[
+				"",
+				"Snippet: helloWorld"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 261.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/gitchunk/spirit_maker/app.js",
+		"/E/gitchunk/spirit_maker/libs/canvas/pixel.js",
+		"/E/gitchunk/spirit_maker/test/test-finpack.js",
+		"/E/gitchunk/spirit_maker/test/test-finpack-less.js",
+		"/E/gitchunk/spirit_maker/test/test-squared.js",
+		"/E/gitchunk/spirit_maker/test/test-trim.js",
+		"/E/gitchunk/spirit_maker/package.json",
+		"/E/gitchunk/spirit_maker/app-v2.js",
+		"/E/gitchunk/spirit_maker/skin/登录2_MarkMan.png",
+		"/E/gitchunk/spirit_maker/test_page/test-finpack-less.html",
+		"/E/gitchunk/spirit_maker/test_page/test-finpack.html",
+		"/E/gitchunk/spirit_maker/test_page/test-squared.html",
+		"/E/gitchunk/spirit_maker/test_page/test-trim.html",
+		"/E/gitchunk/spirit_maker/test_page/test-less.html",
+		"/E/gitchunk/spirit_maker/test_page/test_ruler.js",
+		"/E/gitchunk/spirit_maker/test-squared.html",
+		"/E/authorizePay/css/easyPay-3rd.less",
+		"/E/pay_1-1-272_BRANCH/css/easyPay-3rd.less",
+		"/D/backup/vbs/FeServer.vbs",
+		"/d/backup/nwtest/mergeFile/pack.py",
+		"/E/authorizePay/css/rules.less",
+		"/E/authorizePay/css/easyPay-iframe.css",
+		"/E/authorizePay/css/easyPay-4th.css",
+		"/E/baifubao/static/css/easyPay-iframe.css",
+		"/E/authorizePay/js/app.js",
+		"/E/authorizePay/js/easypay-iframe.js",
+		"/E/authorizePay/js/easypay-iframe/checker.js",
+		"/E/authorizePay/css/aio.css",
+		"/E/authorizePay/tpl/sub-tpl/cards.tpl",
+		"/E/baifubao/cashdesk-iframe/error-iframe.tpl",
+		"/E/baifubao/cashdesk-iframe/easypay-iframe.tpl",
+		"/E/tpls/cashdesk/cashdesk_login.tpl",
+		"/E/tpls/cashdesk-iframe/easypay-iframe.tpl",
+		"/E/pay_1-1-272_BRANCH/js/easypay-iframe.js",
+		"/D/docs/需求/一键支付/交互.psd_test.txt",
+		"/E/3rd/static/baifubao/js/easypay-api.js",
+		"/E/authorizePay/tpl/layout.tpl",
+		"/E/authorizePay/js/radiogroup.js",
+		"/E/authorizePay/css/common.less",
+		"/E/authorizePay/css/spirit.less",
+		"/E/authorizePay/tpl/jades/header.jade",
+		"/E/authorizePay/tpl/jades/rules.jade",
+		"/E/authorizePay/css/pay.less",
+		"/E/authorizePay/tpl/jades/pay.jade",
+		"/E/authorizePay/css/foot.less",
+		"/E/pay_1-1-272_BRANCH/js/easypay-api.js",
+		"/E/authorizePay/js/rules.js",
+		"/C/Program Files/Adobe/Adobe Photoshop CS4/Scripting/Sample Scripts/VBScript/SaveAsFormats.vbs",
+		"/C/Program Files/Adobe/Adobe Photoshop CS4/Scripting/Sample Scripts/AppleScript/Save As TIFF",
+		"/E/authorizePay/source/.spirit-project",
+		"/E/authorizePay/tpl/jades/cards.jade",
+		"/E/authorizePay/css/layout.less",
+		"/C/Users/LIHAIB~1/AppData/Local/Temp/Rar$DR49.184/brook/divart.html",
+		"/C/Users/LIHAIB~1/AppData/Local/Temp/Rar$DR96.203/brook/brookda.js",
+		"/C/Users/LIHAIB~1/AppData/Local/Temp/Rar$DR53.153/brook/divart_files/da.js",
+		"/C/Users/LIHAIB~1/AppData/Local/Temp/Rar$DR02.483/brook/brook.html",
+		"/C/Users/LIHAIB~1/AppData/Local/Temp/Rar$DR10.153/brook/brookda.js",
+		"/D/tools/Sublime Text 2.0.1/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/tools/Sublime Text 2.0.1/Data/Packages/User/Preferences.sublime-settings",
+		"/E/authorizePay/layout.less",
+		"/E/authorizePay/js/login.js",
+		"/E/authorizePay/config.js",
+		"/E/3rd/static/baifubao/js/easypay-iframe/popup.js",
+		"/E/authorizePay/fis-conf.js",
+		"/E/authorizePay/css/saler-info.less",
+		"/E/authorizePay/css/aio.less",
+		"/E/authorizePay/css/header.less",
+		"/E/output/static/css/aio.css",
+		"/D/docs/需求/一键支付/一键支付-填写已绑定信息.psd_test.txt",
+		"/E/authorizePay/tpl/jades/salerinfo.jade",
+		"/D/docs/需求/一键支付/一键支付-支付规则设置-有绑定.psd_test.txt",
+		"/D/docs/需求/一键支付/短信校验码规则.psd_test.txt",
+		"/E/authorizePay/tpl/jades/foot.jade",
+		"/D/tools/Sublime Text 2.0.1/Data/Packages/LESS/LESS.tmLanguage",
+		"/D/tools/Sublime Text 2.0.1/Data/Packages/LESS/readme.md",
+		"/C/Users/lihaibo01/AppData/Local/.fis-tmp/www/index.php",
+		"/C/Users/lihaibo01/AppData/Local/.fis-tmp/www/static/css/rules.css",
+		"/E/fis-site/index.php",
+		"/D/docs/需求/一键支付/一键支付-支付规则设置.psd_test.txt",
+		"/D/tools/Sublime Text 2.0.1/Data/Packages/sublime-node-require/require_node.py",
+		"/E/authorizePay/js/geters.js",
+		"/D/backup/shortcuts/uxe.bat",
+		"/D/backup/shortcuts/test_args_goto_demo.bat",
+		"/D/backup/shortcuts/uxe-lib.bat",
+		"/C/Users/lihaibo01/AppData/Local/.fis-tmp/www/template.tpl",
+		"/C/Program Files/nodejs/node_modules/fis",
+		"/E/authorizePay/js/pop/login.js",
+		"/E/3rd/static/baifubao/js/security_edit-iframe.js",
+		"/E/3rd/static/baifubao/js/easypay-iframe.js",
+		"/E/authorizePay/js/trans/authorizations.js",
+		"/E/authorizePay/js/trans/unlogin.js",
+		"/E/3rd/static/baifubao/js/easypay-iframe/messager.js",
+		"/E/authorizePay/js/trans/trans.js",
+		"/E/authorizePay/config",
+		"/E/authorizePay/js/trans/unlogin",
+		"/D/tools/Sublime Text 2.0.1/Data/Packages/JavaScript/def.sublime-snippet",
+		"/D/tools/Sublime Text 2.0.1/Data/Packages/JavaScript/require_shorts_global.sublime-snippet",
+		"/D/tools/Sublime Text 2.0.1/Data/Packages/JavaScript/require_shorts.sublime-snippet",
+		"/E/authorizePay/js/pop/login",
+		"/E/authorizePay/loginpop.js",
+		"/E/authorizePay/js/login",
+		"/E/authorizePay/login",
+		"/D/backup/nwtest/mergeFile/src/packers.js",
+		"/D/backup/nwtest/mergeFile/src/helpers/loadimage.js",
+		"/D/backup/nwtest/mergeFile/libs/packnode.js",
+		"/D/backup/nwtest/mergeFile/app.js",
+		"/D/backup/nwtest/mergeFile/libs/canvas/squared.js",
+		"/D/backup/nwtest/mergeFile/output/output-2.less",
+		"/D/backup/nwtest/mergeFile/.logs",
+		"/D/backup/nwtest/mergeFile/logs/1",
+		"/D/backup/nwtest/mergeFile/source/.spirit-project",
+		"/D/backup/nwtest/mergeFile/test/test-finpack-less.js",
+		"/D/backup/nwtest/mergeFile/libs/canvas/pixel.js",
+		"/D/backup/nwtest/mergeFile/src/packlist.js",
+		"/D/backup/nwtest/mergeFile/src/newproject.js",
+		"/D/backup/nwtest/mergeFile/src/pack.js",
+		"/D/backup/nwtest/mergeFile/src/packdrawer.js",
+		"/D/backup/nwtest/mergeFile/app-v2.html",
+		"/D/backup/nwtest/mergeFile/skin/app.less",
+		"/D/backup/nwtest/mergeFile/package.json",
+		"/D/backup/nwtest/mergeFile/src/project.js",
+		"/D/backup/nwtest/mergeFile/src/projectlist.js",
+		"/D/backup/nwtest/mergeFile/app.html",
+		"/D/backup/nwtest/mergeFile/src/helpers/simplepack.js",
+		"/D/backup/nwtest/mergeFile/src/dropimg.js",
+		"/D/backup/nwtest/mergeFile/src/newpack.js",
+		"/D/backup/nwtest/mergeFile/src/vm/spirit.js",
+		"/D/backup/nwtest/mergeFile/app-v2.js"
+	],
+	"find":
+	{
+		"height": 82.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"E:\\gitchunk\\spirit_maker\\test",
+			"E:\\gitchunk\\spirit_maker\\test_page",
+			"<open folders>",
+			"*/css/*,-*static/scc*",
+			"/css/*,-*static/scc*",
+			"<open folders>,-*/node_modules/*,-*/libs/*",
+			"<open folders>,-*/node_modules/*",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"pos",
+			"=",
+			"subCanvas",
+			"subC",
+			"right",
+			"left",
+			"=",
+			"col",
+			"getCol",
+			"trim",
+			"pixel",
+			"'libs/",
+			"drawTo",
+			"highlight",
+			"\"test/",
+			"\"libs/",
+			"mousemove",
+			"radioe",
+			"z-index",
+			"grid",
+			"5",
+			" -",
+			"hover",
+			"images/easypay-images",
+			"images",
+			"addcard",
+			"add-card",
+			"hover",
+			"outputJSON",
+			"ep-container",
+			"content",
+			".text",
+			"ep-text",
+			"addClass",
+			"'.text'",
+			".text",
+			"bind-cards",
+			"div class=\"",
+			"#fffcf0",
+			"easypay-config",
+			"#fffcf0",
+			"background: #fffcf0;",
+			".ep-container",
+			"ep-container",
+			"image/easypay-images",
+			"//",
+			"images/easypay-images",
+			"images",
+			"$needBind",
+			"display_name ",
+			"Checker",
+			"resize",
+			"messager",
+			"model",
+			"	",
+			"_checkEdit",
+			"_checkControllerSupport",
+			"A",
+			"chkBrowser",
+			"a",
+			"return_url",
+			".detail",
+			"，",
+			"\n\n'<div class=\"tip\">'\n  '<div class=\"ang\"></div>'\n  '<p>支付时，先从百付宝帐户余额扣款。如余额不足，再从绑定的银行卡内扣款。</p>'\n  '<span class=\"tip-close\">知道了</span>\n</div>'",
+			"div",
+			"10000",
+			"/logo_",
+			"line",
+			"auth_pay",
+			"auth_pay_bins_hori_left",
+			"icon",
+			".icon-detail",
+			"left",
+			"success",
+			" p",
+			"|",
+			" + 1",
+			"$",
+			"elem.",
+			"<script ",
+			"window",
+			"4",
+			"indent",
+			"\n	",
+			"\";",
+			"less",
+			"s",
+			"支付卡",
+			" td",
+			"14px",
+			"!",
+			"30",
+			"dotted",
+			"f7f7f7",
+			"grey",
+			"支付",
+			"开通",
+			"日",
+			"以上",
+			"单笔",
+			"以上",
+			"单笔",
+			"每笔",
+			"短信",
+			"只扣除快捷银行卡",
+			"=radio",
+			"radio",
+			"[",
+			"resolve_from_file",
+			"haspaypass",
+			"checkFix",
+			"repair",
+			"message_vcode",
+			"vcode",
+			"valicode",
+			"oDom",
+			"sc",
+			"getElement",
+			"loginInstance",
+			"project",
+			", ",
+			"updateBorders",
+			"updateBoders",
+			"base64",
+			"loadimage",
+			"borders",
+			"minheight",
+			":"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'../libs/",
+			"\"../test/",
+			"\"../libs/",
+			"    ",
+			"  ",
+			"vertical-align: 0px;",
+			"closest",
+			"-->",
+			"progress",
+			"",
+			"view",
+			"<",
+			"emit",
+			"_path",
+			"script($1)",
+			"$1: $item.find(\"$1\").text(),",
+			"$1: $channel.find(\"$1\").text(),",
+			"$1: $channel.find(\"$1\")",
+			"callback",
+			"  ",
+			"{}",
+			"mongoose",
+			"  ",
+			"post",
+			"  ",
+			"test1",
+			",",
+			"\\\"",
+			"../../../../",
+			"",
+			"../../../../",
+			"../../../",
+			"../../",
+			"../",
+			".",
+			"\\n",
+			"/",
+			"\"",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test_page/test_ruler.html",
+					"settings":
+					{
+						"buffer_size": 407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test/test-ruler.js",
+					"settings":
+					{
+						"buffer_size": 4110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3955,
+								3955
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 0.0,
+							"encoding_helper_encoding": "Unknown",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2660.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "libs/canvas/pixel.js",
+					"settings":
+					{
+						"buffer_size": 9234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6098,
+								6102
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3840.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 191.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 233.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 190.0
+	},
+	"output.jsconsole_view":
+	{
+		"height": 202.0
+	},
+	"output.jshint_view":
+	{
+		"height": 202.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 160.0
+	},
+	"replace":
+	{
+		"height": 92.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"mer",
+				"/D/backup/nwtest/mergeFile/nw-merge-file.sublime-project"
+			],
+			[
+				"cmd",
+				"/D/backup/chromePlugin/009 fileDownload/fileDownload.sublime-project"
+			],
+			[
+				"test",
+				"/D/backup/demo/test/test.sublime-project"
+			],
+			[
+				"file",
+				"/D/backup/chromePlugin/009 fileDownload/fileDownload.sublime-project"
+			],
+			[
+				"fi",
+				"/D/backup/chromePlugin/009 fileDownload/fileDownload.sublime-project"
+			],
+			[
+				"dfi",
+				"/D/backup/chromePlugin/009 fileDownload/fileDownload.sublime-project"
+			],
+			[
+				"fil",
+				"/D/backup/chromePlugin/009 fileDownload/fileDownload.sublime-project"
+			],
+			[
+				"3rd",
+				"/E/easyPay3rd/3rd.sublime-project"
+			],
+			[
+				"te",
+				"/D/backup/demo/test/test.sublime-project"
+			],
+			[
+				"xia",
+				"/D/backup/demo/xiami/xiami.sublime-project"
+			],
+			[
+				"conten",
+				"/D/backup/demo/contentNavigate/contentNavigate.sublime-project"
+			],
+			[
+				"rss",
+				"/D/backup/demo/rss/rss.sublime-project"
+			],
+			[
+				"to",
+				"/D/backup/demo/todo/todo.sublime-project"
+			],
+			[
+				"todo",
+				"/D/backup/demo/todo/todo.sublime-project"
+			],
+			[
+				"eh",
+				"/D/backup/demo/ehentaiGrabber/ehentaiGrabber.sublime-project"
+			],
+			[
+				"",
+				"/D/backup/demo/qidianbook/qidianbook.sublime-project"
+			],
+			[
+				"qi",
+				"/D/backup/demo/qidianbook/qidianbook.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true
+}
