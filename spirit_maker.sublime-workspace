@@ -542,12 +542,20 @@
 				"buffer_size": 9234,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app-v2.html",
+			"settings":
+			{
+				"buffer_size": 7748,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
 	{
-		"height": 196.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -856,6 +864,7 @@
 	},
 	"file_history":
 	[
+		"/L/gitchunk/spirit_maker/spirit_maker.sublime-project",
 		"/E/gitchunk/spirit_maker/app.js",
 		"/E/gitchunk/spirit_maker/libs/canvas/pixel.js",
 		"/E/gitchunk/spirit_maker/test/test-finpack.js",
@@ -982,8 +991,7 @@
 		"/D/backup/nwtest/mergeFile/src/helpers/simplepack.js",
 		"/D/backup/nwtest/mergeFile/src/dropimg.js",
 		"/D/backup/nwtest/mergeFile/src/newpack.js",
-		"/D/backup/nwtest/mergeFile/src/vm/spirit.js",
-		"/D/backup/nwtest/mergeFile/app-v2.js"
+		"/D/backup/nwtest/mergeFile/src/vm/spirit.js"
 	],
 	"find":
 	{
@@ -1009,6 +1017,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"if",
 			"pos",
 			"=",
 			"subCanvas",
@@ -1135,8 +1144,7 @@
 			"base64",
 			"loadimage",
 			"borders",
-			"minheight",
-			":"
+			"minheight"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1193,7 +1201,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1289,6 +1297,39 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 3840.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app-v2.html",
+					"settings":
+					{
+						"buffer_size": 7748,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"encoding_helper_confidence": 1.0,
+							"encoding_helper_encoding": "UTF-8",
+							"encoding_helper_encoding_sublime": "UTF-8",
+							"is_xml": false,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 34.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

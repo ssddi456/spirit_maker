@@ -25,14 +25,14 @@ define([
   var path = global.require('path');
   // packed-url x  y
   var spirittpl = {};
-  spirittpl.bins = util.format.bind(util,'  background : url( @spirit_%s ) #fff -%spx -%spx no-repeat;\n  width: %spx;\n  height: %spx;\n');
-  spirittpl.hori = util.format.bind(util,'  background : url( @spirit_%s ) #fff -%spx -%spx repeat-x;\n  width:%spx;\n  dim: %s;\n');
-  spirittpl.vert = util.format.bind(util,'  background : url( @spirit_%s ) #fff -%spx -%spx repeat-y;\n  dim : %s;\n  height:%spx;\n');
+  spirittpl.bins = util.format.bind(util,'  background : url( @spirit_%s ) transparent -%spx -%spx no-repeat;\n  width: %spx;\n  height: %spx;\n');
+  spirittpl.hori = util.format.bind(util,'  background : url( @spirit_%s ) transparent -%spx -%spx repeat-x;\n  width:%spx;\n  dim: %s;\n');
+  spirittpl.vert = util.format.bind(util,'  background : url( @spirit_%s ) transparent -%spx -%spx repeat-y;\n  dim : %s;\n  height:%spx;\n');
 
   var csstpl  = {
-    bins : util.format.bind(util,'  background : url( "%s" ) #fff -%spx -%spx no-repeat;\n  width: %spx;\n  height: %spx;\n'),
-    hori : util.format.bind(util,'  background : url( "%s" ) #fff -%spx -%spx repeat-x;\n  width:%spx;\n  dim: %s;\n'),
-    vert : util.format.bind(util,'  background : url( "%s" ) #fff -%spx -%spx repeat-y;\n  dim : %s;\n  height:%spx;\n')
+    bins : util.format.bind(util,'  background : url( "%s" ) transparent -%spx -%spx no-repeat;\n  width: %spx;\n  height: %spx;\n'),
+    hori : util.format.bind(util,'  background : url( "%s" ) transparent -%spx -%spx repeat-x;\n  width:%spx;\n  dim: %s;\n'),
+    vert : util.format.bind(util,'  background : url( "%s" ) transparent -%spx -%spx repeat-y;\n  dim : %s;\n  height:%spx;\n')
   };
 
   // classname, projectname, sourcename

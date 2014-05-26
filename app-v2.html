@@ -29,7 +29,7 @@
     <div data-bind="foreach: projects">
       <table data-bind="click : $root.curproject.bind($root.curproject,$data)">
         <tr> 
-          <td> name         </td>
+          <td> project name </td>
           <td>
             <span data-bind="text:name"></span>
             <button data-bind="click:$root.remove.bind($root)">remove</button>
@@ -56,9 +56,13 @@
 
       <div class="popup" id="newpack" data-bind="with : newpack ">
         <h2> new pack </h2>
+        <p> a pic will be a spirit of whole spirits </p>
         <table>
           <tr><td colspan="2" data-bind="text : name"></td></tr>
           <tr><td>custom class</td><td><input data-bind="value : classname"></td></tr>
+          <tr><td></td><td> will be used to ganerate base css class define </td></tr>
+          <tr><td> trim </td><td> <input type="checkbox" /> </td></tr>
+          <tr><td></td><td> remove white border before spirits</td></tr>
           <tr>
             <td>type</td>
             <td>
@@ -70,23 +74,27 @@
               </select>
             </td>
           </tr>
+          <tr><td></td><td> deside how the pic be split </td></tr>
           <!-- ko if : type() != 'single' -->
             <!-- ko if : type() != 'horizon' -->
             <tr>
               <td>min height</td>
               <td><input data-bind="value : minheight" /></td>
             </tr>
+            <tr><td></td><td> one color repeat fill min-height </td></tr>
             <!-- /ko -->
             <!-- ko if : type() != 'vertical' -->
             <tr>
               <td>min width</td>
               <td><input data-bind="value : minwidth"  /></td>
             </tr>
+            <tr><td></td><td> one color repeat fill min-width </td></tr>
             <!-- /ko -->
             <tr>
               <td>borders</td>
               <td><input data-bind="value : border"  /><span data-bind="text : validateborder( border() )"></span></td>
             </tr>
+            <tr><td></td><td> split border, just as css border but without unit, unit :px</td></tr>
           <!-- /ko -->
             <tr>
               <td><button data-bind="enable: enable() == true,
@@ -107,6 +115,7 @@
 
       <div class="popup" id="newproject" data-bind="with : newproject ">
         <h2> new project </h2>
+        <p> every spirit should be in a project</p>
         <table>
           <tr>
             <td>name</td>
@@ -114,6 +123,7 @@
                        placeholder="input project name"
                        data-bind="value : name"></td>
           </tr>
+          <tr><td></td><td> split border, just as css border , unit :px</td></tr>
           <tr> 
             <td> sourcefolder </td>
             <td><input type="text"
@@ -121,6 +131,7 @@
                        data-bind="value : sourceDir,
                                   click : changeSourceDir"></td> 
           </tr>
+          <tr><td></td><td> source setting and source pics will store here</td></tr>
           <tr> 
             <td> target spirit</td>
             <td><input type="text"
@@ -128,6 +139,7 @@
                        data-bind="value : outputSpirit,
                                   click : changeOutputSpirit"></td>   
           </tr>
+          <tr><td></td><td>where the spirit pic save to</td></tr>
           <tr> 
             <td> target less  </td>
             <td><input type="text" 
@@ -135,6 +147,7 @@
                        data-bind="value : outputLess,
                                   click : changeOutputLess"></td>   
           </tr>
+          <tr><td></td><td>where the spirit less file save to</td></tr>
           <tr>
             <td><button data-bind="enable: enable() == true,
                                    click : save">save</button></td>
